@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">NetFlix</div>
+            <form class="search-form" action="/search" method="get">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit">Search</button>
+            </form>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Kids</a></li>
+            </ul>
+            <div class="profile">
+                <div class="profile-info">
+                    <img src="movies/profile.png" alt="Profile Picture">
+                    <ul class="profile-options">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Subscription Plan</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                    <span>  Username</span>
+                </div>
+            </div>
+        </nav>
+    </header>    
+
+    <main>
+
+    <section class="Featured">
+        <h1>Popular on Netflix</h1>
+        <div class="scrollable-container" id="featuredContainer">
+            <div class="movie">
+                <img src="movies/movie1.jpg" alt="Movie 1">
+                <p>Good Will Hunting</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie2.jpg" alt="Movie 2">
+                <p>The Persuit of Happyness</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie3.jpg" alt="Movie 3">
+                <p>Dead Poets Socity</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie4.jpg" alt="Movie 4">
+                <p>3 Idiots</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie5.jpg" alt="Movie 5">
+                <p>The Ron Clark Story</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie6.jpg" alt="Movie 6">
+                <p>The Blind Side</p>
+            </div>
+        </div>
+        <div class="scroll-buttons">
+            <button onclick="scrollContent('featuredContainer', 'left')" class="scroll-left">&lt;</button>
+            <button onclick="scrollContent('featuredContainer', 'right')" class="scroll-right">&gt;</button>
+        </div>
+    </section>
+
+    <section class="Trending Now">
+        <h1>Trending Now</h1>
+        <div class="scrollable-container" id="trendingContainer">
+            <div class="movie">
+                <img src="movies/movie1.jpg" alt="Movie 1">
+                <p>Good Will Hunting</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie2.jpg" alt="Movie 2">
+                <p>The Persuit of Happyness</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie3.jpg" alt="Movie 3">
+                <p>Dead Poets Socity</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie4.jpg" alt="Movie 4">
+                <p>3 Idiots</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie5.jpg" alt="Movie 5">
+                <p>The Ron Clark Story</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie6.jpg" alt="Movie 6">
+                <p>The Blind Side</p>
+            </div>
+        </div>
+        <div class="scroll-buttons">
+            <button onclick="scrollContent('trendingContainer', 'left')" class="scroll-left">&lt;</button>
+            <button onclick="scrollContent('trendingContainer', 'right')" class="scroll-right">&gt;</button>
+        </div>
+    </section>
+
+    <section class="Top Pics">
+        <h1>Top Pics for you</h1>
+        <div class="scrollable-container" id="topPicsContainer">
+            <div class="movie">
+                <img src="movies/movie1.jpg" alt="Movie 1">
+                <p>Good Will Hunting</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie2.jpg" alt="Movie 2">
+                <p>The Persuit of Happyness</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie3.jpg" alt="Movie 3">
+                <p>Dead Poets Socity</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie4.jpg" alt="Movie 4">
+                <p>3 Idiots</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie5.jpg" alt="Movie 5">
+                <p>The Ron Clark Story</p>
+            </div>
+            <div class="movie">
+                <img src="movies/movie6.jpg" alt="Movie 6">
+                <p>The Blind Side</p>
+            </div>
+        </div>
+        <div class="scroll-buttons">
+            <button onclick="scrollContent('topPicsContainer', 'left')" class="scroll-left">&lt;</button>
+            <button onclick="scrollContent('topPicsContainer', 'right')" class="scroll-right">&gt;</button>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MyNetflixSample. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
